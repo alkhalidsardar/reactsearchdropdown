@@ -1,0 +1,71 @@
+body {
+  background-color: #ffff;
+}
+.App {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4vh 4vh;
+}
+button {
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  color: #333;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.dropdown .selected-value input {
+  line-height: 2.5;
+  font-size: 1.2rem;
+  background-color: #f3f3f3;
+  border: 1px solid #787878;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  padding: 8px 20px;
+  transition: all 200ms ease;
+  width: 50vw;
+  color: rgb(27, 27, 27);
+}
+
+.dropdown .options {
+  display: none;
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-sizing: border-box;
+  margin-top: -1px;
+  max-height: 210px;
+  overflow-y: auto;
+  position: absolute;
+  top: 100%;
+  width: 50.6em;
+  z-index: 100;
+  -webkit-overflow-scrolling: touch;
+}
+
+.dropdown .options.open {
+  display: block;
+}
+
+.dropdown .option {
+  box-sizing: border-box;
+  color: rgba(51, 51, 51, 0.8);
+  cursor: pointer;
+  display: block;
+  padding: 8px 10px;
+}
+
+.dropdown .option.selected,
+.dropdown .option:hover {
+  background-color: #e2e2e2;
+  color: #333;
+}
